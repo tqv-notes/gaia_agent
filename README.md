@@ -1,3 +1,20 @@
+# AI Agent for Hugging Face GAIA benchmark
+
+This code is for the final project of Hugging Face AI Agent course. The purpose is to build an agent and evaluate its performance using a subset of the GAIA benchmark.
+
+The implemented solution got 75% score on evaulation subset of this benchmark. It is possible to improve further by fixing the prompts to ensure the simplified final answer (e.g. it should be "89706.00" not "$89706.00"). 
+
+# Models and Tools
+
+- `claude-sonnet-4-6` (via Anthropic Claude API)
+- Tavily Search (via Tavily API) for websearch
+- duckduckgo search for websearch as backup for Tavily
+- openai-whisper for audio files
+- youtube-transcript-api for youtube videos
+- PyPDF2 for PDF file
+- pandas for Excel file
+- base64 to encode image and attached to Claude as vision (hence, no need for OCR tools)
+
 ---
 title: Template Final Assignment
 emoji: 🕵🏻‍♂️
