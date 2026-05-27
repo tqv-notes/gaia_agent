@@ -314,7 +314,7 @@ Rules:
 - NEVER ask for files to be re-uploaded. Work with what you have.
 
 ## STRATEGY:
-1. If file content is provided in the context below, USE IT directly — do NOT ask for files.
+1. If file content is provided in the context below, USE IT directly - do NOT ask for files.
 2. Start with wikipedia_search for factual/historical questions.
 3. Use web_search for anything else. Try 3+ DIFFERENT queries if needed.
 4. Use visit_webpage to read full articles when search snippets aren't enough.
@@ -387,7 +387,7 @@ class GaiaAgent:
         # build prompt
         prompt = decoded
         if file_context:
-            prompt = f"FILE CONTEXT (already preprocessed — use this data directly, do NOT ask for files):\n{file_context}\n\n---\nQuestion: {decoded}"
+            prompt = f"FILE CONTEXT (already preprocessed - use this data directly, do NOT ask for files):\n{file_context}\n\n---\nQuestion: {decoded}"
 
         user_content.append({"type": "text", "text": prompt})
         messages = [{"role": "user", "content": user_content}]
